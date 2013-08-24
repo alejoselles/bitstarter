@@ -4,7 +4,8 @@ var app = express();
 var fs = require('fs');
 
 //----------------------------
-var myString = 'Hola soy string';
+// var myString = 'Hola soy string';
+var myString = fs.readFileSync('index.html','utf8');
 len = Buffer.byteLength(myString, 'utf-8');
 var buffer = new Buffer( len );// ok
 // var buffer = new Buffer( 'Toma con el buffer', 'utf-8' ); // ok
