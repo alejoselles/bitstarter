@@ -3,7 +3,7 @@ var app = express();
 var fs = require('fs');
 
 #-----------
-var buffer = new Buffer( 100);  
+# var buffer = new Buffer( 100);  
 
 # buffer.write( fs.readFileSync('index.html') );
 #----------/
