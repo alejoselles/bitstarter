@@ -1,12 +1,16 @@
 var express = require('express');
 var app = express();
-
 var fs = require('fs');
+
+#-----------
+var buffer = new Buffer(fs.readFileSync('index.html') );#In this way the leng of the buffer is ok
+#----------/
 
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send( fs.readFileSync('index.html','utf8') );
+ # response.send( fs.readFileSync('index.html','utf8') );
+ response.send( buffer.toString('utf-8') );
 });
 
 var port = process.env.PORT || 5000;
