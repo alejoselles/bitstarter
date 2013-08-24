@@ -11,12 +11,12 @@ buffer.write( fs.readFileSync('index.html') );
 app.use(express.logger());
 
 app.get('/', function(request, response) {
- # response.send( fs.readFileSync('index.html','utf8') );
- response.send( buffer.toString('utf-8') );
+  response.send( fs.readFileSync('index.html','utf8') );
+# response.send( buffer.toString('utf-8') );# This tttt work
 });
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
-
+dosen
