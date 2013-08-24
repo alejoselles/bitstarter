@@ -8,7 +8,7 @@ var buffer = new Buffer( 100);// ok
 // var buffer = new Buffer( 'Toma con el buffer', 'utf-8' ); // ok
  
 // buffer.write( fs.readFileSync('index.html') );
-buffer.write ('Esto es con el write', 'utf-8');
+buffer.write ('Esto es con el write');
 
 //----------------------------/
 
