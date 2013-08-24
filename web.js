@@ -5,7 +5,7 @@ var fs = require('fs');
 
 //----------------------------
 // var buffer = new Buffer( 100);
-var buffer = new Buffer( 'Toma con el buffer', 'utf-8' );
+var buffer = new Buffer( 'Toma con el buffer Gordo', 'utf-8' );
  
 // buffer.write( fs.readFileSync('index.html') );
 
