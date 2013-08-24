@@ -4,11 +4,13 @@ var app = express();
 var fs = require('fs');
 
 //----------------------------
+var myString = 'Hola soy string';
 var buffer = new Buffer( 100);// ok
 // var buffer = new Buffer( 'Toma con el buffer', 'utf-8' ); // ok
  
-// buffer.write( fs.readFileSync('index.html') );
-buffer.write ('Esto es con el write');
+// buffer.write( fs.readFileSync('index.html') );  // ??
+buffer.write ('Esto es con el write', 'utf-8');  // sin el utf-8 da casi lo mismo ok
+buffer.write (myString);
 
 //----------------------------/
 
