@@ -5,7 +5,8 @@ var fs = require('fs');
 
 //----------------------------
 var myString = 'Hola soy string';
-var buffer = new Buffer( 100);// ok
+len = Buffer.byteLength(myString, 'utf-8');
+var buffer = new Buffer( len );// ok
 // var buffer = new Buffer( 'Toma con el buffer', 'utf-8' ); // ok
  
 // buffer.write( fs.readFileSync('index.html') );  // ??
