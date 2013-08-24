@@ -3,7 +3,9 @@ var app = express();
 var fs = require('fs');
 
 #-----------
-var buffer = new Buffer(fs.readFileSync('index.html') );#In this way the leng of the buffer is ok
+var buffer = new Buffer( 100);#In this way the leng of the buffer is ok
+
+buffer = fs.readFileSync('index.html');
 #----------/
 
 app.use(express.logger());
